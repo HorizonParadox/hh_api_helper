@@ -22,9 +22,9 @@ async def fetch_all_areas() -> Model:
         return areas
 
 
-get_areas = asyncio.run(fetch_all_areas())
-for country in get_areas.RootModel:
-    print(f"\n{country.name}: {country.id}")
-    for town in country.areas:
-        if town.parent_id=="1001":
-            print(f"{town.name}")
+# get_areas = asyncio.run(fetch_all_areas())
+# for country in get_areas.RootModel:
+#     print(f"\n{country.name}: {country.id}")
+#     for town in country.areas:
+#         if town.parent_id=="1001":
+#             print(f"{town.name}")
